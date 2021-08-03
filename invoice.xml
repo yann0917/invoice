@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.cn.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="InvoiceService" targetNamespace="http://webservice.cn.com/">
+    <wsdl:message name="invoiceStatus">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoicePrintList">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyConfirmResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceDownloadResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5stockDetailsQueryResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoice">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getInvoiceState">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyCountResult">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationSubmitResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="userLogin">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyCountResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceBatchTaxCode">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceBatchTaxCodeResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5stockDetailsSubmitResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getCountInfo">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyLegalizeResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getInvoice">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationDownloadResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationCancelResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBusinessInfo">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceMultiCheck">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyLegalizeResultResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoicePrintResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBusiness">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceZF">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getInvoiceStateResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceStock">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyConfirm">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateInfoResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="updateInfo">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationSubmit">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceSingleCheck">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="userLoginResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5stockDetailsQuery">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationDownload">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getMainInvoiceResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceUpload">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyLegalize">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationUploadResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceMultiCheckResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceStatusResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceStockResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBusinessResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5taxControlOperationResultQuery">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5stockDetailsSubmit">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceSingleCheckResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceGetCheck">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getBusinessInfoResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5taxControlOperationResultQueryResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyCountResultResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getMainInvoice">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceGetCheckResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyConfirmResult">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceZFResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyConfirmResultResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoicePrintListResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getCountInfoResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceDownload">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyLegalizeResult">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoiceUploadResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getInvoiceResponse">
+        <wsdl:part name="return" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="applyCount">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationCancel">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="H5redInvoiceApplicationUpload">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="invoicePrint">
+        <wsdl:part name="arg0" type="xsd:string"> </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="Invoice">
+        <wsdl:operation name="H5redInvoiceApplicationSubmit">
+            <wsdl:input message="tns:H5redInvoiceApplicationSubmit" name="H5redInvoiceApplicationSubmit"> </wsdl:input>
+            <wsdl:output message="tns:H5redInvoiceApplicationSubmitResponse" name="H5redInvoiceApplicationSubmitResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceStatus">
+            <wsdl:input message="tns:invoiceStatus" name="invoiceStatus"> </wsdl:input>
+            <wsdl:output message="tns:invoiceStatusResponse" name="invoiceStatusResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoicePrintList">
+            <wsdl:input message="tns:invoicePrintList" name="invoicePrintList"> </wsdl:input>
+            <wsdl:output message="tns:invoicePrintListResponse" name="invoicePrintListResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceSingleCheck">
+            <wsdl:input message="tns:invoiceSingleCheck" name="invoiceSingleCheck"> </wsdl:input>
+            <wsdl:output message="tns:invoiceSingleCheckResponse" name="invoiceSingleCheckResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5stockDetailsQuery">
+            <wsdl:input message="tns:H5stockDetailsQuery" name="H5stockDetailsQuery"> </wsdl:input>
+            <wsdl:output message="tns:H5stockDetailsQueryResponse" name="H5stockDetailsQueryResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoice">
+            <wsdl:input message="tns:invoice" name="invoice"> </wsdl:input>
+            <wsdl:output message="tns:invoiceResponse" name="invoiceResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationDownload">
+            <wsdl:input message="tns:H5redInvoiceApplicationDownload" name="H5redInvoiceApplicationDownload"> </wsdl:input>
+            <wsdl:output message="tns:H5redInvoiceApplicationDownloadResponse" name="H5redInvoiceApplicationDownloadResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInvoiceState">
+            <wsdl:input message="tns:getInvoiceState" name="getInvoiceState"> </wsdl:input>
+            <wsdl:output message="tns:getInvoiceStateResponse" name="getInvoiceStateResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyCountResult">
+            <wsdl:input message="tns:applyCountResult" name="applyCountResult"> </wsdl:input>
+            <wsdl:output message="tns:applyCountResultResponse" name="applyCountResultResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceUpload">
+            <wsdl:input message="tns:invoiceUpload" name="invoiceUpload"> </wsdl:input>
+            <wsdl:output message="tns:invoiceUploadResponse" name="invoiceUploadResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="userLogin">
+            <wsdl:input message="tns:userLogin" name="userLogin"> </wsdl:input>
+            <wsdl:output message="tns:userLoginResponse" name="userLoginResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyLegalize">
+            <wsdl:input message="tns:applyLegalize" name="applyLegalize"> </wsdl:input>
+            <wsdl:output message="tns:applyLegalizeResponse" name="applyLegalizeResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5taxControlOperationResultQuery">
+            <wsdl:input message="tns:H5taxControlOperationResultQuery" name="H5taxControlOperationResultQuery"> </wsdl:input>
+            <wsdl:output message="tns:H5taxControlOperationResultQueryResponse" name="H5taxControlOperationResultQueryResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceBatchTaxCode">
+            <wsdl:input message="tns:invoiceBatchTaxCode" name="invoiceBatchTaxCode"> </wsdl:input>
+            <wsdl:output message="tns:invoiceBatchTaxCodeResponse" name="invoiceBatchTaxCodeResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCountInfo">
+            <wsdl:input message="tns:getCountInfo" name="getCountInfo"> </wsdl:input>
+            <wsdl:output message="tns:getCountInfoResponse" name="getCountInfoResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5stockDetailsSubmit">
+            <wsdl:input message="tns:H5stockDetailsSubmit" name="H5stockDetailsSubmit"> </wsdl:input>
+            <wsdl:output message="tns:H5stockDetailsSubmitResponse" name="H5stockDetailsSubmitResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceGetCheck">
+            <wsdl:input message="tns:invoiceGetCheck" name="invoiceGetCheck"> </wsdl:input>
+            <wsdl:output message="tns:invoiceGetCheckResponse" name="invoiceGetCheckResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMainInvoice">
+            <wsdl:input message="tns:getMainInvoice" name="getMainInvoice"> </wsdl:input>
+            <wsdl:output message="tns:getMainInvoiceResponse" name="getMainInvoiceResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInvoice">
+            <wsdl:input message="tns:getInvoice" name="getInvoice"> </wsdl:input>
+            <wsdl:output message="tns:getInvoiceResponse" name="getInvoiceResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyConfirmResult">
+            <wsdl:input message="tns:applyConfirmResult" name="applyConfirmResult"> </wsdl:input>
+            <wsdl:output message="tns:applyConfirmResultResponse" name="applyConfirmResultResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBusinessInfo">
+            <wsdl:input message="tns:getBusinessInfo" name="getBusinessInfo"> </wsdl:input>
+            <wsdl:output message="tns:getBusinessInfoResponse" name="getBusinessInfoResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceMultiCheck">
+            <wsdl:input message="tns:invoiceMultiCheck" name="invoiceMultiCheck"> </wsdl:input>
+            <wsdl:output message="tns:invoiceMultiCheckResponse" name="invoiceMultiCheckResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBusiness">
+            <wsdl:input message="tns:getBusiness" name="getBusiness"> </wsdl:input>
+            <wsdl:output message="tns:getBusinessResponse" name="getBusinessResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceZF">
+            <wsdl:input message="tns:invoiceZF" name="invoiceZF"> </wsdl:input>
+            <wsdl:output message="tns:invoiceZFResponse" name="invoiceZFResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceDownload">
+            <wsdl:input message="tns:invoiceDownload" name="invoiceDownload"> </wsdl:input>
+            <wsdl:output message="tns:invoiceDownloadResponse" name="invoiceDownloadResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceStock">
+            <wsdl:input message="tns:invoiceStock" name="invoiceStock"> </wsdl:input>
+            <wsdl:output message="tns:invoiceStockResponse" name="invoiceStockResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyConfirm">
+            <wsdl:input message="tns:applyConfirm" name="applyConfirm"> </wsdl:input>
+            <wsdl:output message="tns:applyConfirmResponse" name="applyConfirmResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyLegalizeResult">
+            <wsdl:input message="tns:applyLegalizeResult" name="applyLegalizeResult"> </wsdl:input>
+            <wsdl:output message="tns:applyLegalizeResultResponse" name="applyLegalizeResultResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyCount">
+            <wsdl:input message="tns:applyCount" name="applyCount"> </wsdl:input>
+            <wsdl:output message="tns:applyCountResponse" name="applyCountResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationCancel">
+            <wsdl:input message="tns:H5redInvoiceApplicationCancel" name="H5redInvoiceApplicationCancel"> </wsdl:input>
+            <wsdl:output message="tns:H5redInvoiceApplicationCancelResponse" name="H5redInvoiceApplicationCancelResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateInfo">
+            <wsdl:input message="tns:updateInfo" name="updateInfo"> </wsdl:input>
+            <wsdl:output message="tns:updateInfoResponse" name="updateInfoResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationUpload">
+            <wsdl:input message="tns:H5redInvoiceApplicationUpload" name="H5redInvoiceApplicationUpload"> </wsdl:input>
+            <wsdl:output message="tns:H5redInvoiceApplicationUploadResponse" name="H5redInvoiceApplicationUploadResponse"> </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoicePrint">
+            <wsdl:input message="tns:invoicePrint" name="invoicePrint"> </wsdl:input>
+            <wsdl:output message="tns:invoicePrintResponse" name="invoicePrintResponse"> </wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="InvoiceServiceSoapBinding" type="tns:Invoice">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="H5redInvoiceApplicationSubmit">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5redInvoiceApplicationSubmit">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5redInvoiceApplicationSubmitResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceStatus">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceStatus">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceStatusResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceSingleCheck">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceSingleCheck">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceSingleCheckResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoicePrintList">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoicePrintList">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoicePrintListResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5stockDetailsQuery">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5stockDetailsQuery">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5stockDetailsQueryResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoice">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoice">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationDownload">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5redInvoiceApplicationDownload">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5redInvoiceApplicationDownloadResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInvoiceState">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getInvoiceState">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getInvoiceStateResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyCountResult">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyCountResult">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyCountResultResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceUpload">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceUpload">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceUploadResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="userLogin">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="userLogin">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="userLoginResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyLegalize">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyLegalize">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyLegalizeResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5taxControlOperationResultQuery">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5taxControlOperationResultQuery">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5taxControlOperationResultQueryResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceBatchTaxCode">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceBatchTaxCode">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceBatchTaxCodeResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getCountInfo">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getCountInfo">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getCountInfoResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5stockDetailsSubmit">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5stockDetailsSubmit">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5stockDetailsSubmitResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceGetCheck">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceGetCheck">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceGetCheckResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getMainInvoice">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getMainInvoice">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getMainInvoiceResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInvoice">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getInvoice">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getInvoiceResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyConfirmResult">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyConfirmResult">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyConfirmResultResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBusinessInfo">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getBusinessInfo">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getBusinessInfoResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceMultiCheck">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceMultiCheck">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceMultiCheckResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getBusiness">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="getBusiness">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getBusinessResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceZF">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceZF">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceZFResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceDownload">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceDownload">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceDownloadResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoiceStock">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoiceStock">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoiceStockResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyConfirm">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyConfirm">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyConfirmResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyLegalizeResult">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyLegalizeResult">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyLegalizeResultResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="applyCount">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="applyCount">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="applyCountResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationCancel">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5redInvoiceApplicationCancel">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5redInvoiceApplicationCancelResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="updateInfo">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="updateInfo">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="updateInfoResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="H5redInvoiceApplicationUpload">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="H5redInvoiceApplicationUpload">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="H5redInvoiceApplicationUploadResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="invoicePrint">
+            <soap:operation soapAction="" style="rpc"/>
+            <wsdl:input name="invoicePrint">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="invoicePrintResponse">
+                <soap:body namespace="http://webservice.cn.com/" use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="InvoiceService">
+        <wsdl:port binding="tns:InvoiceServiceSoapBinding" name="InvoicePort">
+            <soap:address location="http://121.36.219.110/Ninvoicejs/service/invoice"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
